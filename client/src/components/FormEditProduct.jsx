@@ -42,14 +42,14 @@ const FormEditProduct = () => {
       .put("http://localhost:3000/api/product/" + params.id, data)
       .then((res) => {
         console.log(res.data);
-        navigate("/eval");
+        navigate("/");
       })
       .catch((err) => console.log(err));
   };
 
   return (
     <div>
-      <div className="text-center p-8 text-sm font-medium text-gray-900 dark:text-white">
+      <div className="p-8 text-sm font-medium text-center text-gray-900 dark:text-white">
         <h1>การประเมินนโยบายสาธารณะ</h1>
       </div>
       <form onSubmit={handleSubmit}>
@@ -74,26 +74,24 @@ const FormEditProduct = () => {
               <option selected className="text-blue">
                 กรุณาเลือกตัวชี้วัด
               </option>
-              <option>ดัชนีสันติภาพโลก</option>
-              <option>ดัชนีความสุขโลก</option>
-              <option>ดัชนีสิทธิมนุษยชนและหลักนิติธรรม</option>
-              <option>ดัชนีสถาบัน</option>
-              <option>ดัชนีเสถียรภาพทางการเมือง</option>
-              <option>ดัชนีการมีสิทธิ์มีเสียงของประชาชนและภาระรับผิดชอบ</option>
-              <option>ดัชนีความปลอดภัยจากภัยคุกคาม</option>
-              <option>ดัชนีความสงบสุขภาคใต้</option>
               <option>
-                ประสิทธิภาพของหน่วยงานด้านการข่าวและประชาคมข่าวกรอง
-              </option>
-              <option>ดัชนีความแข็งแกร่งทางกำลังทหาร</option>
-              <option>ดัชนีรัฐเปราะบาง</option>
-              <option>
-                สถานการณ์บรรลุเป้าหมายของการพัฒนาที่ยั่งยืน (SDGs) เป้าหมายที่
-                17
+                อัตราการขยายตัวของผลิตภัณฑ์มวลรวมของ เขตเศรษฐกิจพิเศษทั้งหมด
               </option>
               <option>
-                ระดับประสิทธิภาพการดำเนินงานของหน่วยงานด้านการจัดการความมั่นคง
+                มูลค่าการส่งเสริมการลงทุนในเขตเศรษฐกิจพิเศษทั้งหมด
               </option>
+              <option>
+                อัตราการขยายตัวของผลิตภัณฑ์มวลรวมของพื้นที่เขตพัฒนาพิเศษภาคตะวันออก
+              </option>
+              <option>มูลค่าการลงทุนในเขตพัฒนาพิเศษภาคตะวันออก</option>
+              <option>
+                อัตราการขยายตัวของผลิตภัณฑ์มวลรวมของพื้นที่ระเบียงเศรษฐกิจพิเศษ
+              </option>
+              <option>มูลค่าการลงทุนในพื้นที่ระเบียงเศรษฐกิจพิเศษ</option>
+              <option>
+                อัตราการขยายตัวของผลิตภัณฑ์มวลรวมของจังหวัดที่มีเขตพัฒนาเศรษฐกิจพิเศษชายแดน
+              </option>
+              <option>มูลค่าการลงทุนในเขตพัฒนาเศรษฐกิจพิเศษชายแดน</option>
             </select>
           </div>
           <div className="mb-2">
@@ -295,7 +293,7 @@ const FormEditProduct = () => {
             />
           </div>
         </div>
-        <div className="grid mx-96 mb-6 mt-6">
+        <div className="grid mt-6 mb-6 mx-96">
           <div className="flex items-start mb-6">
             <div className="flex items-center h-5">
               <input

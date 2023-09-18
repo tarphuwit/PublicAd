@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div class="flex justify-center bg-green-800 shadow-lg shadow-blue-500/50 rounded-lg p-2">
+      <div class="flex justify-center bg-green-800 shadow-lg shadow-blue-500/50  p-2">
         <div class="self-center top-0 w-full max-w-8xl">
           <div class="flex justify-between items-center text-gray-700">
             <div class="mx-2 my-4 ">
@@ -15,19 +15,16 @@ const Navbar = () => {
             </div>
             <ul class="hidden md:flex items-center text-[18px] font-semibold pr-10">
               <li class="text-white hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
-                <a href="#">
-                  หลักสูตรรัฐประศาสนศาสตร์
-                  มหาวิทยาลัยเกษตรศาสตร์วิทยาเขตเฉลิมพระเกียรติ
-                </a>
+                <a href="#">หลักสูตรรัฐประศาสนศาสตร์</a>
               </li>
               <li class="text-white hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
-                <a href="/">หน้าหลัก</a>
+                <a href="/">การประเมินนโยบายสาธารณะ</a>
               </li>
               <li class="text-white hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
                 <a href="/team">เกี่ยวกับ</a>
               </li>
               <li class="text-white hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
-                <Link to="/eval">การประเมินนโยบายสาธารณะ</Link>
+                <Link to="/eval">ทีมงาน</Link>
               </li>
               <li class="text-white hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
                 <a href="/edit">ยุทธศาสตร์ชาติ</a>
